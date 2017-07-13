@@ -12,5 +12,5 @@ ENV HOME /root
 
 WORKDIR /root
 
-CMD ["/bin/bash"]
+CMD ["/run.sh"]
 
