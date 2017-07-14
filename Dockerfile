@@ -11,7 +11,7 @@ ENV HOME /root
 
 WORKDIR /root
 
-COPY script.sh 
+COPY script.sh HOME/
 
 CMD ["/root/script.sh"]
 
