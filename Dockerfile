@@ -6,11 +6,7 @@ RUN \
   apt-get install -y lm-sensors && \
   mkdir -p /home/node-exporter
 
-ENV HOME /root
+COPY script.sh /home/
 
-WORKDIR /root
-
-COPY script.sh HOME/
-
-CMD ["/root/script.sh"]
+CMD ["/home/script.sh"]
 
