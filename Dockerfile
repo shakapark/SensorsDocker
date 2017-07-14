@@ -11,5 +11,7 @@ ENV HOME /root
 
 WORKDIR /root
 
-CMD ["/run.sh"]
+COPY script.sh 
+
+CMD ["/root/script.sh"]
 
