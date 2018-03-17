@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-RUN  apk_add \
+RUN  apk add \
        lm_sensors \
        perl \
        bash
