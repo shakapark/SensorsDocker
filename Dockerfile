@@ -1,10 +1,10 @@
-FROM ubuntu:16.04
+FROM alpine:3.7
 
-RUN \
-  apt-get update && \
-  apt-get -y upgrade && \
-  apt-get install -y lm-sensors && \
-  mkdir -p /home/node-exporter
+RUN  apk_add \
+       lm_sensors \
+       perl \
+       bash
+RUN  mkdir -p /home/node-exporter
 
 COPY script.sh /home/
 
